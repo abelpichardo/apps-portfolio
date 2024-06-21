@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1rem;
+    font-style: normal;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d8d6d6f6;
+    min-height: 1600px;
+    overflow: auto;
+}

@@ -1,0 +1,52 @@
+.header-container-c{
+    @apply hidden sm:flex sticky top-0 z-10 p-16 w-full justify-center gap-24 ; 
+    animation: menuAnimationMove 2s ease-in-out both; 
+    animation-timeline: scroll(root);
+    animation-range: 0% 100%;
+}
+
+.header-group{
+    @apply flex w-full justify-center gap-10 items-center;
+    
+}
+
+.header-element{
+    @apply  text-xl transform hover:line-through cursor-pointer;
+    animation: textAnimationRotate 2s ease-in-out both;
+    animation-timeline: scroll(root);
+    animation-range: 0% 100%;
+}
+
+.header-middle-container{
+    animation: photoAnimation 2s ease-in-out both;
+    animation-timeline: scroll(root);
+    animation-range: 0% 100%;
+}
+
+@keyframes photoAnimation {
+    0% {
+        transform: translateY(50vh);
+    }
+    100% {
+        transform: translateY(0vh) rotate(-35deg);
+    }
+}
+
+@keyframes menuAnimationMove {
+    0% {
+        gap:24rem; 
+    }
+    100% {
+        gap: 6rem; 
+    }
+}
+
+@keyframes textAnimationRotate {
+    0% {
+        transfrom: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-35deg); 
+    }
+}
+
