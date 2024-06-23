@@ -1,0 +1,12 @@
+
+<div class="project-container">
+    <div *ngIf="index && index%2==1" class="project-container-right">
+        <p>Aqui va a ir el texto que se va a poner </p>
+    </div>
+    <div class="project-container-left">
+        <img class="w-[35vw] h-[60vh] object-cover" src={{image}} alt="FOTO"/>
+    </div>
+    <div *ngIf="index && index%2==0" class="project-container-right">
+        <p>Aqui va a ir el texto que se va a poner </p>
+    </div>
+</div>

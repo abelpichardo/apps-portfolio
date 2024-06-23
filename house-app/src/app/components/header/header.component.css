@@ -1,52 +1,64 @@
 .header-container-c{
-    @apply hidden sm:flex sticky top-0 z-10 p-16 w-full justify-center gap-24 ; 
-    animation: menuAnimationMove 2s ease-in-out both; 
+    @apply hidden sm:flex sticky top-0 z-10 p-16 w-full justify-center gap-8 items-center max-h-6 bg-primary_black; 
+    animation: menuAnimationMove 2s ease-in-out both, backgroundColor 1s ease-in-out both;
     animation-timeline: scroll(root);
-    animation-range: 0% 100%;
+    animation-range: 0 135vh;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTExLjk5NyA1MTEuOTk3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk3IDUxMS45OTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz48cGF0aCBmaWxsPSIjZjNmMmYyIiBkPSJNNTExLjIyOCwxMzQuNjk5Yy0xLjYxNS00LjA1Mi01LjU0Mi02LjY5OC05Ljg5Ni02LjY5OGgtNDIuNjY3Yy0yLjcyOSwwLTUuMzU0LDEuMDQyLTcuMzMzLDIuOTI3TDI1NS45OTksMzE1Ljk3IEw2MC42NjUsMTMwLjkyOGMtMS45NzktMS44ODUtNC42MDQtMi45MjctNy4zMzMtMi45MjdIMTAuNjY1Yy00LjM1NCwwLTguMjgxLDIuNjQ2LTkuODk2LDYuNjk4Yy0xLjYyNSw0LjA0Mi0wLjYyNSw4LjY2NywyLjUyMSwxMS42NzdMMjU4LjUxOSwzODMuMzk0YzQuMTI1LDMuOTM4LDEwLjYyNSwzLjkzOCwxNC43NSwwbDI0NS4zMzMtMjM0LjY2N0M1MTEuODUzLDE0My4zNjYsNTEyLjg1MywxMzguNzQxLDUxMS4yMjgsMTM0LjY5OXoiLz48L2c+PC9nPjwvc3ZnPg==') 6 6, auto;
+
 }
 
 .header-group{
-    @apply flex w-full justify-center gap-10 items-center;
-    
+    @apply flex w-full justify-center gap-8 items-center;
 }
 
 .header-element{
-    @apply  text-xl transform hover:line-through cursor-pointer;
+    @apply  transform hover:line-through cursor-pointer;
     animation: textAnimationRotate 2s ease-in-out both;
     animation-timeline: scroll(root);
-    animation-range: 0% 100%;
+    animation-range: 0 125vh;
 }
 
 .header-middle-container{
     animation: photoAnimation 2s ease-in-out both;
     animation-timeline: scroll(root);
-    animation-range: 0% 100%;
+    animation-range: 0 140vh;
+    position: absolute;
 }
 
 @keyframes photoAnimation {
     0% {
-        transform: translateY(50vh);
+        transform: translateY(40vh) scale(0.7);
     }
     100% {
-        transform: translateY(0vh) rotate(-35deg);
+        transform: translateY(0vh) scale(0.3);
     }
 }
 
 @keyframes menuAnimationMove {
     0% {
-        gap:24rem; 
+        gap: 2rem; 
     }
     100% {
-        gap: 6rem; 
+        gap: 10rem; 
     }
 }
 
 @keyframes textAnimationRotate {
     0% {
-        transfrom: rotate(0deg);
+        transform: rotate(0deg) 
     }
     100% {
-        transform: rotate(-35deg); 
+        transform: rotate(45deg) 
+    }
+}
+
+@keyframes backgroundColor {
+    99%{
+      @apply bg-primary_black text-primary_white ;
+    }
+
+    100%{
+        @apply bg-primary_white text-primary_black cursor-default bg-opacity-0;
     }
 }
 

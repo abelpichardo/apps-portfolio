@@ -4,15 +4,14 @@
 @tailwind utilities;
 
 body {
-    font-family: "Outfit", sans-serif;
+    @apply bg-primary_white text-primary_white;
+    font-family: Karla, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 1rem;
+    font-weight: 0.875rem;
     font-style: normal;
-    background-color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #d8d6d6f6;
-    min-height: 1600px;
+    min-height: 2000px;
     overflow: auto;
 }

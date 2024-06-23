@@ -1,0 +1,26 @@
+.footer-container{
+     @apply  flex flex-col w-full h-[60vh] bg-primary_black items-center justify-around p-20 ;
+}
+
+.footer-element{
+    @apply text-3xl;
+    animation: movementElements  ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 1% cover 35%;
+}
+
+.footer-container-description{
+    @apply flex justify-around ml-14 mr-14 w-[75vw];
+}
+
+@keyframes movementElements {
+    from{
+        opacity: 0;
+        translate: 0 100px;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
