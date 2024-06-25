@@ -11,4 +11,6 @@ import { Component, Input, input } from '@angular/core';
 export class ProjectComponent {
   @Input() index: number | undefined;
   @Input() image: string | undefined; 
+  @Input() title: string | undefined;
+  @Input() description: string | undefined;
 }

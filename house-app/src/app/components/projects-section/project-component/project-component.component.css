@@ -12,6 +12,10 @@
     @apply  w-1/2;
 }
 
+.project-container-right{
+    @apply flex flex-col items-center justify-center ;
+}
+
 
 @keyframes reveal {
     from {
