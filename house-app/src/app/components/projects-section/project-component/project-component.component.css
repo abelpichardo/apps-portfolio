@@ -9,7 +9,7 @@
 }
 
 .project-container-left, .project-container-right{
-    @apply w-1/2;
+    @apply  w-1/2;
 }
 
 

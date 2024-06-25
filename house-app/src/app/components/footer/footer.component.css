@@ -3,14 +3,14 @@
 }
 
 .footer-element{
-    @apply text-3xl;
+    @apply text-3xl 2xl:text-5xl;
     animation: movementElements  ease-in-out both;
     animation-timeline: view();
     animation-range: entry 1% cover 35%;
 }
 
 .footer-container-description{
-    @apply flex justify-around ml-14 mr-14 w-[75vw];
+    @apply justify-around md:ml-14 md:mr-14 w-[75vw];
 }
 
 @keyframes movementElements {

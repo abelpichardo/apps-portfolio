@@ -1,6 +1,6 @@
 
 
 .projects-container{
-    @apply m-44 flex flex-col box-border text-primary_black items-center;
+    @apply m-12 md:m-44 flex flex-col box-border text-primary_black items-center;
     
 }
